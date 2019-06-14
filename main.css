@@ -1,0 +1,75 @@
+/* 所有内容按它的border来计算宽度 */
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* 字体 */
+body{
+  font-size: 14px;
+  color: #444;
+}
+
+
+/* 容器 */
+.container{
+  display: block;
+  max-width: 1080px; /* 页面最大为1080px，窗口小于1080px时，页面为窗口大小 */
+  margin: 0 auto; /* 居中显示 */
+}
+
+/* 清楚浮动 */
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clear-float:after,
+.clear-float:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 文本的分段显示 */
+.col-1,.col-2,.col-3,.col-4,.col-5,
+.col-6,.col-7,.col-8,.col-9,.col-10{
+  display: block;
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+.col-1{
+  width: 10%;
+}
+.col-2{
+  width: 20%;
+}
+.col-3{
+  width: 30%;
+}
+.col-4{
+  width: 40%;
+}
+.col-5{
+  width: 50%;
+}
+.col-6{
+  width: 60%;
+}
+.col-7{
+  width: 70%;
+}
+.col-8{
+  width: 80%;
+}
+.col-9{
+  width: 90%;
+}
+.col-10{
+  width: 100%;
+}
